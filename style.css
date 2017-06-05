@@ -1,0 +1,54 @@
+body {
+  font-family: 'Open Sans',Arial,sans-serif;
+  margin: 0px; }
+
+.content {
+  text-align: center;
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.main-header {
+  position: relative;
+  height: 500px;
+  background-image: url(images/header-bg.jpg);
+  background-size: auto 600px;
+  background-position: top center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  overflow: hidden; }
+
+.guy {
+  height: 500px;
+  width: 100%;
+  background-image: url(images/guy.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  margin-top: -35px; }
+
+.content {
+  margin-bottom: 10px; }
+  .content .main-grid .row {
+    position: relative;
+    width: 100%;
+    font-size: 0; }
+    .content .main-grid .row .columns {
+      width: 33.33333%;
+      display: inline-block;
+      opacity: 0;
+      transition: all 0.5s ease-in-out;
+      transform: translateX(20px); }
+      .content .main-grid .row .columns.is-showing {
+        opacity: 1;
+        transform: translateX(0px); }
+
+.large-parallax {
+  height: 400px;
+  background-image: url(images/parallax-1.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+
+/*# sourceMappingURL=style.css.map */

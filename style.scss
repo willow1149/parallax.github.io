@@ -1,0 +1,72 @@
+body{
+	font-family: 'Open Sans',Arial,sans-serif;
+	margin: 0px;
+}
+
+.content{
+	text-align: center;
+	max-width: 1170px;
+	margin-left: auto;
+	margin-right: auto;
+}
+//parallax
+
+.main-header{
+	position: relative;
+	height: 500px;
+	background: {
+		image: url(images/header-bg.jpg);
+		size: auto 600px;
+		position: top center;
+		attachment: fixed;
+		repeat: no-repeat;
+	}
+	overflow: hidden;
+}
+
+.guy{
+	height: 500px;
+	width: 100%;
+	background:{
+		image: url(images/guy.png);
+		position: center;
+		repeat: no-repeat;
+	}
+	position:	absolute;
+	top: 50%;
+	margin-top: -35px;
+}
+// Grid
+
+.content{
+	margin-bottom:	10px;
+	.main-grid{
+		.row{
+			position: relative;
+			width: 100%;
+			font-size: 0;
+			.columns{
+				width: (100%/3);
+				display: inline-block;
+				opacity: 0;
+				transition: all 0.5s ease-in-out;
+				transform: translateX(20px);
+				&.is-showing{
+					opacity: 1;
+					transform: translateX(0px);
+				}
+			}		
+		}
+	}
+}			
+
+//large parallax
+.large-parallax{
+	height: 400px;
+	background:{
+		image: url(images/parallax-1.jpg);
+		position: top center;
+		repeat: no-repeat;
+		attachment: fixed;
+	}
+}
